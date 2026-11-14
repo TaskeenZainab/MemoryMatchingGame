@@ -258,11 +258,11 @@ DrawItem PROC USES ebx esi edi, pDis:DWORD
     je di_hidden
     cmp edx, 1
     je di_flipped
-    mov ebx, brMatch                ; state 2 = matched (pink)
+    mov ebx, brMatch                ; state 2 = matched (soft orchild)
     mov txtClr, COL_MATCH_TXT
     jmp di_symbol
 di_flipped:
-    mov ebx, brFlip                 ; state 1 = flipped (sky blue)
+    mov ebx, brFlip                 ; state 1 = flipped (light lilac)
     mov txtClr, COL_FLIP_TXT
 di_symbol:
     mov dl, cards[eax]
@@ -270,7 +270,7 @@ di_symbol:
     mov txtPtr, OFFSET symBuf
     jmp di_paint
 di_hidden:
-    mov ebx, brHidden               ; state 0 = hidden (lavender "?")
+    mov ebx, brHidden               ; state 0 = hidden (violet "?")
     mov txtClr, COL_HIDDEN_TXT
     mov txtPtr, OFFSET txtHidden
     jmp di_paint

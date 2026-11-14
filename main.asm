@@ -66,7 +66,7 @@ main PROC
     INVOKE LoadCursorA, 0, IDC_ARROW
     mov wc.hCursor, eax
     mov eax, brBg
-    mov wc.hbrBackground, eax       ; dark window background
+    mov wc.hbrBackground, eax       ; cream window background
     mov wc.lpszMenuName, 0
     mov wc.lpszClassName, OFFSET className
     mov wc.hIconSm, 0

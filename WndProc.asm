@@ -102,7 +102,7 @@ on_drawitem:
     mov eax, 1
     ret
 
-; ---------- WM_CTLCOLORSTATIC: label colours on the dark background ----------
+; ---------- WM_CTLCOLORSTATIC: label colours on the cream background ----------
 on_ctlcolor:
     mov eax, lParam                 ; the static control being painted
     mov edx, COL_TEXT
