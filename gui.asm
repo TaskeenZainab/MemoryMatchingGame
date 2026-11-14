@@ -258,7 +258,7 @@ DrawItem PROC USES ebx esi edi, pDis:DWORD
     je di_hidden
     cmp edx, 1
     je di_flipped
-    mov ebx, brMatch                ; state 2 = matched (soft orchild)
+    mov ebx, brMatch                ; state 2 = matched (soft orchid)
     mov txtClr, COL_MATCH_TXT
     jmp di_symbol
 di_flipped:
