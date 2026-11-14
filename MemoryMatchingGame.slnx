@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MemoryMatchingGame.vcxproj" Id="a544b8a3-ade0-4e5a-8988-b48947808ce9" />
+</Solution>
